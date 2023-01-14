@@ -41,6 +41,7 @@ class Program
                     break;
 
                 case 5:
+                //Here is something a little extra and fun to try and guess. 
                     Console.WriteLine("What is always coming but never arrives?");
                     string trickQuestion = Console.ReadLine();
                     trick.trickAnswer(trickQuestion);
@@ -58,3 +59,7 @@ class Program
         }
     }
 }
+/*Things that I did to exceed the requirements were adding 5 more prompts to the list. 
+Then I made it so the console background was blue and the text was red just to make it look different.
+The last thing that I did to make it my own was added my own little trick question to make
+it a fun little guessing game.*/
