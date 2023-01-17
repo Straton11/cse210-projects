@@ -50,6 +50,7 @@ class Program
 
                 case 6:
                     go = false;
+                    Console.WriteLine("Thanks for using the Journal App.");
                     break;
 
                 default:
