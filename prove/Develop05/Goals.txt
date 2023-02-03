@@ -1,0 +1,5 @@
+0
+Negative Goal,junk food,eating it,50,
+Simple Goal,eat h,eat it,10,
+Eternal Goal,church,go,10,
+Checklist Goal,temple,go,10,,0,3,10
