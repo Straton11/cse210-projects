@@ -26,7 +26,7 @@ public void DisplayVideoInfo ()
 {
     Console.WriteLine ($"Title: {_title}");
     Console.WriteLine ($"Author: {_author}");
-    Console.WriteLine($"Seconds of the video: {_length}");
+    Console.WriteLine($"Length of the video(seconds): {_length}");
 }
 public int NumberComments()
 {
