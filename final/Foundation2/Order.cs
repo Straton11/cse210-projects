@@ -37,7 +37,7 @@ public class Order
         {
             string name = pro.GetProductName();
             int productID = pro.GetProductID();
-            Console.WriteLine($"> Product: {name} - ID: {productID}");
+            Console.WriteLine($"Product: {name} - ID: {productID}");
         }
     }
     public void ShippingLabel()
@@ -45,6 +45,6 @@ public class Order
         string customerName = _name.GetCustomerName();
         Address getAddress = _name.GetAddress();
         string fullAddress = getAddress.FullAddress();
-        Console.WriteLine($"> Full Name: {customerName} - Address: {fullAddress}");
+        Console.WriteLine($"Full Name: {customerName} - Address: {fullAddress}");
     }
 }
