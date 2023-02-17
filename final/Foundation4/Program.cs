@@ -32,6 +32,7 @@ class Program
                     Console.WriteLine();
                     if(choice == "1")
                     {
+                        //running 
                         string activityType = "Running";
                         
                         Console.Write("What is the Date of the activity (month-day)? ");
@@ -50,6 +51,7 @@ class Program
 
                     }else if(choice == "2")
                     {
+                        //stationary bicycles
                         string activityType = "Stationary Bicycles";
                         Console.Write("What is the Date of the activity (month-day)? ");
                         string date = Console.ReadLine();
@@ -66,6 +68,7 @@ class Program
                         
                     }else if(choice == "3")
                     {
+                        //swimming
                         string activityType = "Swimming";
                         Console.Write("What is the Date of the activity (month-day)? ");
                         string date = Console.ReadLine();
@@ -99,3 +102,4 @@ class Program
         }while(play == true);  
     }
 }
+//Here is the final for foundation 4
