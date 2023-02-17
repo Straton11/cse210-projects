@@ -4,11 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
-<<<<<<< HEAD
         Console.BackgroundColor = ConsoleColor.Blue;
         Console.ForegroundColor = ConsoleColor.Red;
-=======
->>>>>>> afd9d5362fce070b991c283191ceec505f78d09b
         Console.WriteLine();
         Console.WriteLine("Welcome to the Online Ordering App!");
         Console.WriteLine();
