@@ -5,9 +5,9 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine();
-        Console.WriteLine("Welcome to the Youtube Videos Monitoring App!");
+        Console.WriteLine("Welcome to the Youtube Video Monitoring App!");
         Console.WriteLine();
-
+//first video
         Video video1 = new Video();
         video1._author = "ESPN";
         video1._length = 50;
@@ -28,7 +28,7 @@ class Program
         comment13._commment = "What is a three?";
         video1.comments.Add(comment13);
 
-
+//second video
         Video video2 = new Video();
         video2._author = "Braxton Facer";
         video2._length = 100;
@@ -54,7 +54,7 @@ class Program
         comment24._commment = "Wish that everyone say this.";
         video2.comments.Add(comment24);
 
-
+//third video
         Video video3 = new Video();
         video3._author = "Brittney Dennert";
         video3._length = 150;
@@ -75,7 +75,7 @@ class Program
         comment33._commment = "I can not wait to have kids of my own one day.";
         video3.comments.Add(comment33);
 
-
+//creating the list
         List<Video> videos = new List<Video>()
         {
             video1, video2, video3
@@ -92,3 +92,4 @@ class Program
 
     }
 }
+// Here is the foundation1 project
