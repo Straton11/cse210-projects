@@ -35,7 +35,7 @@ public class Activity
     }
     public virtual string GetSummary()
     {
-        return $"°{date} {activityType} ({lenghtMinutes})-Distance {distance} miles, Speed: {CalculateSpeed().ToString("N2")} mph, Pace: {CalculatePace().ToString("N2")} min per mile";
+        return $"Date: {date}, Activity: {activityType}, Minutes:({lenghtMinutes}) Distance: {distance} miles, Speed: {CalculateSpeed().ToString("N2")} mph, Pace: {CalculatePace().ToString("N2")} minutes/mile";
     }
     
 }

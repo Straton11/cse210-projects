@@ -6,7 +6,7 @@ class Program
     static void Main(string[] args)
     {
         
-        DataBase database = new DataBase();
+        Saving saving = new Saving();
         bool play = true;
         Console.WriteLine();
         Console.WriteLine("Welcome to the Exercise Tracking App!");
@@ -27,57 +27,58 @@ class Program
             switch(_switch)
             {
                 case 1:
-                    Console.Write("What exercise would you like to add?\n\r1. Running\n\r2. Stationary Bicycles\n\r3. Swimming laps\n\rType the number you want: ");
-                    string option = Console.ReadLine();
+                    Console.Write("What exercise would you like to add?\n\r1. Running\n\r2. Stationary Bicycles\n\r3. Swimming Laps\n\rType the number you want: ");
+                    string choice = Console.ReadLine();
                     Console.WriteLine();
-                    if(option == "1")
+                    if(choice == "1")
                     {
                         string activityType = "Running";
                         
-                        Console.Write("What is the Date of the activity? ");
+                        Console.Write("What is the Date of the activity (month-day)? ");
                         string date = Console.ReadLine();
                         Console.Write("What is the length in minutes? ");
-                        string userInput2 = Console.ReadLine();
-                        int lenghtMinutes = int.Parse(userInput2);
+                        string number2 = Console.ReadLine();
+                        int lenghtMinutes = int.Parse(number2);
                         Console.Write("What is the distance in miles? ");
-                        string userInput3 = Console.ReadLine();
-                        double distance = int.Parse(userInput3);
-                        Running activity = new Running(activityType, date, lenghtMinutes, distance);
-                        database.SetActivityList(activity);
+                        string number3 = Console.ReadLine();
+                        double distance = int.Parse(number3);
+                        Running running = new Running(activityType, date, lenghtMinutes, distance);
+                        saving.SetActivityList(running);
                         Console.WriteLine();
                         
                         
 
-                    }else if(option == "2")
+                    }else if(choice == "2")
                     {
                         string activityType = "Stationary Bicycles";
-                        Console.Write("What is the Date of the activity? ");
+                        Console.Write("What is the Date of the activity (month-day)? ");
                         string date = Console.ReadLine();
                         Console.Write("What is the length in minutes? ");
-                        string userInput2 = Console.ReadLine();
-                        int lenghtMinutes = int.Parse(userInput2);
+                        string number2 = Console.ReadLine();
+                        int lenghtMinutes = int.Parse(number2);
                         Console.Write("What is the distance in miles? ");
-                        string userInput3 = Console.ReadLine();
-                        double distance = int.Parse(userInput3);
-                        StationaryBicycles bikeActivity = new StationaryBicycles(activityType, date, lenghtMinutes, distance);
-                        database.SetActivityList(bikeActivity);
+                        string number3 = Console.ReadLine();
+                        double distance = int.Parse(number3);
+                        StationaryBicycles stationaryBicycles = new StationaryBicycles(activityType, date, lenghtMinutes, distance);
+                        saving.SetActivityList(stationaryBicycles);
                         Console.WriteLine();
                         
                         
-                    }else if(option == "3")
+                    }else if(choice == "3")
                     {
                         string activityType = "Swimming";
-                        Console.Write("What is the Date of the activity? ");
+                        Console.Write("What is the Date of the activity (month-day)? ");
                         string date = Console.ReadLine();
                         Console.Write("What is the length in minutes? ");
-                        string userInput2 = Console.ReadLine();
-                        int lenghtMinutes = int.Parse(userInput2);
-                        Console.Write("What is the number of laps? ");
-                        string userInput3 = Console.ReadLine();
-                        double laps = int.Parse(userInput3);
+                        string number2 = Console.ReadLine();
+                        int lenghtMinutes = int.Parse(number2);
+                        Console.Write("What is the number of laps (has to be greater than 20 laps to calculate)? ");
+                        string number3 = Console.ReadLine();
+                        int laps = int.Parse(number3);
+                        double distance = laps * 50 / 1000 * 0.62 ;
                     
-                        Swimming swimmingActivity = new Swimming(activityType, date, lenghtMinutes, laps);
-                        database.SetActivityList(swimmingActivity);
+                        Swimming swimming = new Swimming(activityType, date, lenghtMinutes, distance, laps);
+                        saving.SetActivityList(swimming);
                         Console.WriteLine();
 
                     }
@@ -86,7 +87,7 @@ class Program
 
                 case 2:
                     Console.WriteLine("Summary:");
-                    database.DisplayActivity();
+                    saving.DisplayActivity();
                     Console.WriteLine();
                     break;
 

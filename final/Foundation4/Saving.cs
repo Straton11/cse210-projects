@@ -1,4 +1,4 @@
-public class DataBase 
+public class Saving 
 {
     private List<Activity> activities = new List<Activity>();
     
@@ -8,9 +8,9 @@ public class DataBase
     }
     public void DisplayActivity()
     {
-        foreach(Activity acti in activities)
+        foreach(Activity activity in activities)
         {
-            Console.WriteLine(acti.GetSummary());
+            Console.WriteLine(activity.GetSummary());
         }
     }
 }
