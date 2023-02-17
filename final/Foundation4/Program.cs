@@ -4,8 +4,9 @@ class Program
 {
     
     static void Main(string[] args)
-    {
-        
+    {        
+        Console.BackgroundColor = ConsoleColor.Blue;
+        Console.ForegroundColor = ConsoleColor.Red;
         Saving saving = new Saving();
         bool play = true;
         Console.WriteLine();
@@ -18,7 +19,7 @@ class Program
             Console.WriteLine("1. Add exercise");
             Console.WriteLine("2. Display summary");
             Console.WriteLine("3. Quit");
-            Console.Write("What would you like to do?");
+            Console.Write("Please choose on of the options?");
             string userInput = Console.ReadLine();
             int _switch = int.Parse(userInput);
             Console.WriteLine();
@@ -27,7 +28,7 @@ class Program
             switch(_switch)
             {
                 case 1:
-                    Console.Write("What exercise would you like to add?\n\r1. Running\n\r2. Stationary Bicycles\n\r3. Swimming Laps\n\rType the number you want: ");
+                    Console.Write("What exercise would you like to add?\n\r1. Running\n\r2. Stationary Bicycles\n\r3. Swimming Laps\n\rEnter the number of activity you did: ");
                     string choice = Console.ReadLine();
                     Console.WriteLine();
                     if(choice == "1")

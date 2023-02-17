@@ -7,7 +7,7 @@ public int _length;
 public List<Comment> comments = new List<Comment>();
 
 
-public int StoreComments()
+public int Save()
 {
     
     int counter = 0;
@@ -22,13 +22,13 @@ public int StoreComments()
 
     return counter;
 }
-public void DisplayVideoInfo ()
+public void Clip ()
 {
     Console.WriteLine ($"Title: {_title}");
     Console.WriteLine ($"Author: {_author}");
     Console.WriteLine($"Length of the video(seconds): {_length}");
 }
-public int NumberComments()
+public int Interaction()
 {
     int counter = 0;
     foreach (Comment comm in comments)

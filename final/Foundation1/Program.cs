@@ -3,7 +3,9 @@ using System;
 class Program
 {
     static void Main(string[] args)
-    {
+    {        
+        Console.BackgroundColor = ConsoleColor.Blue;
+        Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine();
         Console.WriteLine("Welcome to the Youtube Video Monitoring App!");
         Console.WriteLine();
@@ -82,10 +84,10 @@ class Program
         };
         foreach (Video video in videos)
         {
-            video.DisplayVideoInfo();
-            int videoNumberComments = video.NumberComments();
-            Console.Write($"{videoNumberComments} ");
-            video.StoreComments();
+            video.Clip();
+            int interaction = video.Interaction();
+            Console.Write($"{interaction} ");
+            video.Save();
             Console.WriteLine();
         }
         
