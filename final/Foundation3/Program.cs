@@ -7,6 +7,7 @@ class Program
         Console.WriteLine();
         Console.WriteLine("Welcome to the Event Planning App!");
         Console.WriteLine();
+//Lecture event
         Console.WriteLine(" Lecture Event ");
         Console.WriteLine("---------------");
         Address address1 = new Address("Pevero", "Idaho Falls", "ID", "USA", 220, 83401);
@@ -21,7 +22,7 @@ class Program
         Console.WriteLine("Short Description:");
         Console.WriteLine(event1.ShortDescription());
         Console.WriteLine();
-        
+//Reception Event       
         Console.WriteLine(" Reception Event ");
         Console.WriteLine("-----------------");
         Address address2 = new Address("Cornelison","Rexburg", "ID","USA",270,83440);
@@ -37,7 +38,7 @@ class Program
         Console.WriteLine(event2.ShortDescription());
         Console.WriteLine();
 
-
+//Outdoor Gathering Event
         Console.WriteLine(" Outdoor Gathering Event ");
         Console.WriteLine("-------------------------");
         Address address3 = new Address("Thang Lo","Sigon","AO","Vietnam",41,55569);
@@ -56,3 +57,4 @@ class Program
 
     }
 }
+//Here is the final of foundation 3
