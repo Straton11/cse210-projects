@@ -3,9 +3,13 @@ using System;
 class Program
 {
     static void Main(string[] args)
+<<<<<<< HEAD
     {        
         Console.BackgroundColor = ConsoleColor.Blue;
         Console.ForegroundColor = ConsoleColor.Red;
+=======
+    {
+>>>>>>> afd9d5362fce070b991c283191ceec505f78d09b
         Console.WriteLine();
         Console.WriteLine("Welcome to the Youtube Video Monitoring App!");
         Console.WriteLine();
@@ -84,10 +88,17 @@ class Program
         };
         foreach (Video video in videos)
         {
+<<<<<<< HEAD
             video.Clip();
             int interaction = video.Interaction();
             Console.Write($"{interaction} ");
             video.Save();
+=======
+            video.DisplayVideoInfo();
+            int videoNumberComments = video.NumberComments();
+            Console.Write($"{videoNumberComments} ");
+            video.StoreComments();
+>>>>>>> afd9d5362fce070b991c283191ceec505f78d09b
             Console.WriteLine();
         }
         
