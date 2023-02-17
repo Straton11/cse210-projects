@@ -7,6 +7,7 @@ class Program
         Console.WriteLine();
         Console.WriteLine("Welcome to the Online Ordering App!");
         Console.WriteLine();
+//first person to order
         Address address1 = new Address("Hansen", "Idaho Falls", "ID","USA");
         Customer customer1 = new Customer("Lottie Lee", address1);
         Order order1 = new Order(customer1);
@@ -30,7 +31,7 @@ class Program
 
 
 
-
+//second persond to order
         Address address2 = new Address("Pevero", "Sau Paulo", "BZ","Brazil");
         Customer customer2 = new Customer("Houston Facer", address2);
         Order order2 = new Order(customer2);
@@ -56,7 +57,7 @@ class Program
 
 
 
-
+//third person to order
         Address address3 = new Address("Cornelison", "Rexburg", "ID","USA");
         Customer customer3 = new Customer("Dillon Merril", address3);
         Order order3 = new Order(customer3);
@@ -84,3 +85,4 @@ class Program
 
     }
 }
+// Here is the final of foundation 2
